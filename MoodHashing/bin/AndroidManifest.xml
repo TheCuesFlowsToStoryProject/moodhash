@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.pronab.moodhash"
+    android:versionCode="1"
+    android:versionName="1.0" >
+
+    <uses-sdk
+        android:minSdkVersion="8"
+        android:targetSdkVersion="17" />
+   <uses-permission android:name="android.permission.INTERNET" />
+ <uses-permission   android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+    <application
+        android:name=".MoodHash"
+        android:allowBackup="true"
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme" >
+        <activity
+            android:name="com.pronab.moodhash.Starter"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        
+<activity android:label="Make" android:name="Make"></activity>
+<activity android:label="Register" android:name="Register"></activity>
+<activity android:label="Welcome" android:name="Welcome"></activity>
+<activity android:label="MoodTrail" android:name="MoodTrail"></activity> 
+        
+    </application>
+
+</manifest>

@@ -1,0 +1,52 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#d7c797"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context=".Welcome" >
+  
+   <LinearLayout 
+      android:id="@+id/botlayout"
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content"
+          android:orientation="vertical" >  
+      <TextView
+          android:id="@+id/welcometext"
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:ems="10"
+          android:text="You Have Following Moods" >
+      </TextView>
+      
+      <TextView android:id="@+id/output"
+            android:background="#758AA7" 
+			android:layout_height="wrap_content"
+			android:padding="1px"
+			android:textColor="#ffffff"
+			android:text="Click : " android:layout_width="fill_parent" />
+     
+   </LinearLayout>
+
+   <Button
+       android:id="@+id/createmood"
+       android:layout_width="wrap_content"
+       android:layout_height="wrap_content"
+       android:layout_alignParentBottom="true"
+       android:layout_centerHorizontal="true"
+       android:text="Create New Mood" />
+
+   <ListView
+       android:id="@android:id/list"
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content"
+       android:layout_above="@+id/createmood"
+       android:layout_alignLeft="@+id/botlayout"
+       android:layout_below="@+id/botlayout" >
+
+   </ListView>
+
+</RelativeLayout>
